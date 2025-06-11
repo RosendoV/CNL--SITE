@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Segoe";
+    src: url(./fontes/segoe-wp-font/);
+}
+
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+    --verde-pp: #879E6D;
+    --verde-escuro: #585E51;
+    --verde-cinza: #B0BCA2;
+}
+
+.container-grid {
+    max-width: 1400px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--verde-cinza);
+}
+
+header{
+    background-color: var(--branco);
+    padding: 15px 0;
+    border-bottom: 1px;
+}
+
+header .container-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container-grid img{
+    height: 100px;
+}
+
+.menu{
+    max-width: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    font-size: 22px;
+    color: var(--verde-pp);
+    font-family: "Segoe";
+    
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    transition: text-decoration 500ms ease;
+}
+
+.menu a {
+    text-decoration: var(--verde-escuro);
+}
+
+
+.texto-banner h1 {
+    color: var(--verde-escuro);
+    margin-bottom: 0;
+    font-size: 70px;
+    font-family: "Philosopher", regular;
+    
+}
+
+.conteudo-banner img{
+    max-width: 250px;
+    width: 50%;
+    border-radius: 25px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
+   
+}
+
+.conteudo-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    margin: 160px;
+}
+
+main{
+    background-color: var(--verde-cinza);
+}
+
+
+
+
